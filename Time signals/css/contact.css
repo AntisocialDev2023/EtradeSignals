@@ -1,0 +1,255 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.dark-mode {
+  background: black;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin: 1rem;
+}
+
+nav {
+  background: transparent;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 299;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-right {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  transition: 0.5s;
+  height: 100%;
+  width: 0;
+  z-index: 299;
+  overflow-y: auto;
+}
+
+.sidebar .logos {
+  display: none;
+  position: relative;
+}
+
+.sidebar button {
+  display: none;
+  position: relative;
+}
+
+.menu {
+  background: transparent;
+  border: 0px;
+}
+
+.sidebar.active {
+  width: 250px;
+}
+
+.sidebar.active button {
+  display: block;
+}
+
+.dropdown {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border: 0px;
+}
+
+.sidebar.active .logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.logos img {
+  width: 60%;
+}
+
+.logos button {
+  background: transparent;
+  border: 0px;
+}
+
+.theme {
+  display: none;
+  position: relative;
+  min-width: 100px;
+}
+
+.theme.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.theme button {
+  background: transparent;
+  color: black;
+  text-align: justify;
+  padding: 1rem;
+  border: 0px;
+  cursor: pointer;
+}
+
+.pages {
+  display: none;
+  position: relative;
+  transition: 0.5s;
+}
+
+.pages.active {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.trading {
+  display: none;
+  position: relative;
+  min-width: 100px;
+}
+
+.trading.active {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.mining {
+  display: none;
+  position: relative;
+  min-width: 100px;
+}
+
+.mining.active {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.mining.active a,
+.trading.active a,
+.pages.active a {
+  text-align: center;
+  padding: 1rem;
+}
+
+.pages.active a,
+.trading.active a,
+.mining.active a {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.pages.active a i,
+.trading.active a i,
+.mining.active a i {
+  margin: 8px;
+}
+
+.pages.active a img {
+  display: flex;
+  width: 10%;
+  margin: 8px;
+}
+
+.contact {
+  background: #00000099;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+input {
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+button {
+  background: #1aa1a7;
+  color: white;
+  padding: 1rem;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.formtext {
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footerright {
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerright div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-right {
+    display: flex;
+  }
+
+  .formholder {
+    display: flex;
+    width: 100%;
+  }
+
+  .formholder form {
+    width: 100%;
+  }
+
+  .formtext {
+    padding-top: 5rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/about.css" />
+    <script
+      src="https://kit.fontawesome.com/4026608ea1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="control.js"></script>
+    <title>About Us</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <button onclick="toggleNav()" class="menu">
+            <i class="fa-solid fa-bars"></i>
+            </button>
+          </li>
+          <li>E*Tradesignals</li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li>en</li>
+          <li>Theme</li>
+          <li>Trading</li>
+          <li>Mining</li>
+          <li>Login</li>
+          <li>Sign Up</li>
+        </ul>
+      </div>
+      <div class="sidebar" id="sidenav">
+        <div class="logos">
+          <img src="images/logo-etrade.png" alt="" />
+          <button><i class="fa-solid fa-x" onclick="toggleNav()"></i></button>
+        </div>
+        <button onclick="toggleTheme()" class="dropdown">
+          <i class="fa-solid fa-caret-down"></i>
+          Theme
+        </button>
+        <div class="theme" id="theme">
+          <button onclick="toggleDark()">Light</button>
+          <button onclick="toggleDark()">Dark</button>
+        </div>
+        <button onclick="togglePages()" class="dropdown">
+          <i class="fa-solid fa-caret-down"></i>
+          Pages
+        </button>
+        <div class="pages" id="pages">
+          <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+          <a href="about.html">
+            <img src="images/profile-2user-svgrepo-com.svg" alt="" />
+            About Us</a
+          >
+          <a href="contact.html"
+            ><i class="fa-solid fa-envelope"></i>Contact Us</a
+          >
+          <a href="privacypolicy.html"
+            ><i class="fa-solid fa-lock"></i>Privacy Policy</a
+          >
+          <a href="#"><i class="fa-regular fa-folder"></i>Terms & Conditions</a>
+
+          <a href="./auth/login.php"
+            ><i class="fa-regular fa-user"></i>Sign in</a
+          >
+          <a href="./auth/register.php">
+            <img src="images/profile-add-svgrepo-com.svg" alt="" />
+            Open Account</a
+          >
+        </div>
+        <button onclick="toggleTrading()" class="dropdown">
+          <i class="fa-solid fa-caret-down"></i>
+          Trading
+        </button>
+        <div class="trading" id="trading">
+          <a href="copy.html"><i class="fa-regular fa-copy"></i>Copy Trading</a>
+          <a href="faq.html"
+            ><i class="fa-solid fa-comments"></i>Trading Help</a
+          >
+          <a href="forex.html"
+            ><i class="fa-regular fa-calendar"></i>Trade Forex</a
+          >
+          <a href="crypto.html"
+            ><i class="fa-regular fa-copyright"></i>Trade Crypto</a
+          >
+          <a href="stocks.html"
+            ><i class="fa-solid fa-chart-simple"></i>Trade Stocks</a
+          >
+          <a href="options.html"
+            ><i class="fa-solid fa-circle-notch"></i>Trade Options</a
+          >
+        </div>
+        <button onclick="toggleMining()" class="dropdown">
+          <i class="fa-solid fa-caret-down"></i>
+          Mining
+        </button>
+        <div class="mining" id="mining">
+          <a href="mininghelp.html"
+            ><i class="fa-solid fa-comments"></i>Mining Help</a
+          >
+          <a href="miningabout.html"
+            ><i class="fa-regular fa-calendar"></i>About Mining</a
+          >
+          <a href="bitcoin.html"
+            ><i class="fa-regular fa-copyright"></i>Bitcoin Mining</a
+          >
+          <a href="dogecoin.html"
+            ><i class="fa-regular fa-copyright"></i>Dogecoin Mining</a
+          >
+          <a href="enigma.html"
+            ><i class="fa-solid fa-hard-drive"></i>Enigma Datacenter</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="about">
+      <h1>About Us</h1>
+    </div>
+    <div class="timetext">
+      <div>
+        <h2>Seven Years of Impeccable Service</h2>
+        <p>
+          E*Tradesignals was founded in 2024 by a group of professionals who are
+          artfully combining the technical expertise required to Copy
+          Professional Traders (If you can’t trade on your own). Forex Trading,
+          Crypto Currency Trading and Stock Trading with a dedicated corporate
+          team, state of the art headquarters and a passion for helping those
+          with a strong desire to improve their lives
+        </p>
+        <p>
+          Our team is committed to achieve exceptional results, being one step
+          ahead. We created a trading platform for the long-term, setting up the
+          standard to change the fortune of future generations to come!
+        </p>
+      </div>
+      <img src="images/Seven.webp" alt="" />
+    </div>
+    <div class="countries">
+      <div class="countryhead">
+        <h2>134 countries</h2>
+        <span
+          >Traders from all over the world trust Timexsignals. The platform
+          interface is localized into 12 languages.
+        </span>
+      </div>
+      <div class="countrybody">
+        <div>
+          <span>English</span>
+          <span>Türkçe</span>
+          <span>Indonesia</span>
+          <span>Espanol</span>
+        </div>
+        <div>
+          <span>Português</span>
+          <span>Français</span>
+          <span>Português</span>
+          <span>Japanese</span>
+        </div>
+        <div>
+          <span>Chinese</span>
+          <span>German</span>
+          <span>Italiano</span>
+          <span>Svenska</span>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class="footerleft">
+        <img src="images/logo-etrade.png" alt="" />
+        <h2>E*Tradesignals</h2>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <span>support@E*Tradesignals.online</span>
+        </div>
+      </div>
+      <div class="footerright">
+        <h2>Quick Links</h2>
+        <div>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

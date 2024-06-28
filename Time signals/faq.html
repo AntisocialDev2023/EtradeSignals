@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs - E*TradeSignals</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <script
+      src="https://kit.fontawesome.com/4026608ea1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="control.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <button onclick="toggleNav()" class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </li>
+          <li><a href="index.html">E*Tradesignals</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li>Login</li>
+          <li>Sign Up</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="sidebar" id="sidenav">
+      <div class="logos">
+        <img src="images/logo-etrade.png" alt="" />
+        <button><i class="fa-solid fa-x" onclick="toggleNav()"></i></button>
+      </div>
+      <button onclick="toggleTheme()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Theme
+      </button>
+      <div class="theme" id="theme">
+        <button onclick="toggleDark()">Light</button>
+        <button onclick="toggleDark()">Dark</button>
+      </div>
+      <button onclick="togglePages()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Pages
+      </button>
+      <div class="pages" id="pages">
+        <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="about.html">
+          <img src="images/profile-2user-svgrepo-com.svg" alt="" />
+          About Us</a
+        >
+        <a href="contact.html"
+          ><i class="fa-solid fa-envelope"></i>Contact Us</a
+        >
+        <a href="privacypolicy.html"
+          ><i class="fa-solid fa-lock"></i>Privacy Policy</a
+        >
+        <a href="#"><i class="fa-regular fa-folder"></i>Terms & Conditions</a>
+
+        <a href="./auth/login.php"><i class="fa-regular fa-user"></i>Sign in</a>
+        <a href="./auth/register.php">
+          <img src="images/profile-add-svgrepo-com.svg" alt="" />
+          Open Account</a
+        >
+      </div>
+      <button onclick="toggleTrading()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Trading
+      </button>
+      <div class="trading" id="trading">
+        <a href="copy.html"><i class="fa-regular fa-copy"></i>Copy Trading</a>
+        <a href="faq.html"><i class="fa-solid fa-comments"></i>Trading Help</a>
+        <a href="forex.html"
+          ><i class="fa-regular fa-calendar"></i>Trade Forex</a
+        >
+        <a href="crypto.html"
+          ><i class="fa-regular fa-copyright"></i>Trade Crypto</a
+        >
+        <a href="stocks.html"
+          ><i class="fa-solid fa-chart-simple"></i>Trade Stocks</a
+        >
+        <a href="options.html"
+          ><i class="fa-solid fa-circle-notch"></i>Trade Options</a
+        >
+      </div>
+      <button onclick="toggleMining()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Mining
+      </button>
+      <div class="mining" id="mining">
+        <a href="mininghelp.html"
+          ><i class="fa-solid fa-comments"></i>Mining Help</a
+        >
+        <a href="miningabout.html"
+          ><i class="fa-regular fa-calendar"></i>About Mining</a
+        >
+        <a href="bitcoin.html"
+          ><i class="fa-regular fa-copyright"></i>Bitcoin Mining</a
+        >
+        <a href="dogecoin.html"
+          ><i class="fa-regular fa-copyright"></i>Dogecoin Mining</a
+        >
+        <a href="enigma.html"
+          ><i class="fa-solid fa-hard-drive"></i>Enigma Datacenter</a
+        >
+      </div>
+    </div>
+    <div class="topsection">
+      <h2>FAQs</h2>
+      <span>Frequently Asked Questions</span>
+    </div>
+    <div class="question-holder">
+      <h2>FAQs</h2>
+      <div class="question-container">
+        <div class="questions">
+          <button onclick="toggleFirstCopyFaq()">
+            <i class="fa-solid fa-caret-down"></i>
+            Who are the experts?
+          </button>
+          <div class="copyfirst" id="copyfirst">
+            <p>
+              We carefully select expert applicants. We get to know them as a
+              trader and examine their trading performance over a period of
+              time. We also tend to look for expert who already have a following
+              to further confirm their competence (social proof). You can also
+              read about every expert on their individual performance pages.
+            </p>
+          </div>
+          <button onclick="toggleSecondCopyFaq()">
+            <i class="fa-solid fa-caret-down"></i>
+            Recommended amount to start with?
+          </button>
+          <div class="copysecond" id="copysecond">
+            <p>
+              We suggest to have around $3000-$5000 in your account due to
+              exchanges minimum order requirements and so that you can at least
+              cover the trading cost every month.
+            </p>
+          </div>
+        </div>
+        <div class="questions">
+          <button onclick="toggleThirdCopyFaq()">
+            <i class="fa-solid fa-caret-down"></i>
+            How does this work?
+          </button>
+          <div class="copythird" id="copythird">
+            <p>
+              Here is how the copier works: You, as an investor, simply select
+              an expert or experts that you want to copy trades from. Once you
+              are signed up, this is the only action needed on your part.
+            </p>
+            <br />
+            <p>
+              Once you’ve taken care of the above, you are all set. There are no
+              codes that you need to run or signals for you to manually input.
+              Our software will handle the trade copying automatically on your
+              behalf. We monitor your experts trading activity and as soon as
+              there is a trade, we calculate all the necessary parameters and
+              execute the trade.
+            </p>
+            <br />
+            <p>
+              The copier works based on trade percent amount. So, for example,
+              if your expert takes a position in XYZ coin for a total of 10% of
+              his account value and you are 100% allocated to that expert, then
+              the copier will also execute a trade in your account in the amount
+              of 10% of your account value.
+            </p>
+            <br />
+            <p>
+              The only thing you have to make sure of is that you have enough
+              available base currency that your expert trades with, in your
+              trading account. How much is enough? First, you must meet the
+              exchanges minimum order amount (let’s say about $10 per trade to
+              be safe). That means that if your expert executes a 5% order, you
+              must have at least $300 in your account total value (at 100%
+              expert allocation as an example). This also means that you need to
+              have at least 10% or higher in available base currency to avoid
+              missed trades.
+            </p>
+            <br />
+            <p>
+              When the expert exits a position, you too will exit it.
+              Automatically. You can also change allocation at any time.
+            </p>
+          </div>
+          <button onclick="toggleFourthCopyFaq()">
+            <i class="fa-solid fa-caret-down"></i>
+            What are the fees?
+          </button>
+          <div class="copyfourth" id="copyfourth">
+            <p>
+              We do not charge you any setup or maintenance fees, each trader
+              gets a set percentage of the profit they make, make sure you check
+              this percentage before copying any trader.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footerleft">
+        <img src="images/logo-etrade.png" alt="" />
+        <h2>E*tradesignals</h2>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <span>support@E*tradesignals.online</span>
+        </div>
+      </div>
+      <div class="footerright">
+        <h2>Quick Links</h2>
+        <div>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

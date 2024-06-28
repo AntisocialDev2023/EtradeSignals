@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enigma Datacenter - E*TradeSignals</title>
+    <script
+      src="https://kit.fontawesome.com/4026608ea1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/general.css" />
+    <script src="control.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <button onclick="toggleNav()" class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </li>
+          <li><a href="index.html">E*Tradesignals</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li>Login</li>
+          <li>Sign Up</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="sidebar" id="sidenav">
+      <div class="logos">
+        <img src="images/logo-etrade.png" alt="" />
+        <button><i class="fa-solid fa-x" onclick="toggleNav()"></i></button>
+      </div>
+      <button onclick="toggleTheme()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Theme
+      </button>
+      <div class="theme" id="theme">
+        <button onclick="toggleDark()">Light</button>
+        <button onclick="toggleDark()">Dark</button>
+      </div>
+      <button onclick="togglePages()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Pages
+      </button>
+      <div class="pages" id="pages">
+        <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="about.html">
+          <img src="images/profile-2user-svgrepo-com.svg" alt="" />
+          About Us</a
+        >
+        <a href="contact.html"
+          ><i class="fa-solid fa-envelope"></i>Contact Us</a
+        >
+        <a href="privacypolicy.html"
+          ><i class="fa-solid fa-lock"></i>Privacy Policy</a
+        >
+        <a href="#"><i class="fa-regular fa-folder"></i>Terms & Conditions</a>
+
+        <a href="./auth/login.php"><i class="fa-regular fa-user"></i>Sign in</a>
+        <a href="./auth/register.php">
+          <img src="images/profile-add-svgrepo-com.svg" alt="" />
+          Open Account</a
+        >
+      </div>
+      <button onclick="toggleTrading()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Trading
+      </button>
+      <div class="trading" id="trading">
+        <a href="copy.html"><i class="fa-regular fa-copy"></i>Copy Trading</a>
+        <a href="faq.html"><i class="fa-solid fa-comments"></i>Trading Help</a>
+        <a href="forex.html"
+          ><i class="fa-regular fa-calendar"></i>Trade Forex</a
+        >
+        <a href="crypto.html"
+          ><i class="fa-regular fa-copyright"></i>Trade Crypto</a
+        >
+        <a href="stocks.html"
+          ><i class="fa-solid fa-chart-simple"></i>Trade Stocks</a
+        >
+        <a href="options.html"
+          ><i class="fa-solid fa-circle-notch"></i>Trade Options</a
+        >
+      </div>
+      <button onclick="toggleMining()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Mining
+      </button>
+      <div class="mining" id="mining">
+        <a href="mininghelp.html"
+          ><i class="fa-solid fa-comments"></i>Mining Help</a
+        >
+        <a href="miningabout.html"
+          ><i class="fa-regular fa-calendar"></i>About Mining</a
+        >
+        <a href="bitcoin.html"
+          ><i class="fa-regular fa-copyright"></i>Bitcoin Mining</a
+        >
+        <a href="dogecoin.html"
+          ><i class="fa-regular fa-copyright"></i>Dogecoin Mining</a
+        >
+        <a href="enigma.html"
+          ><i class="fa-solid fa-hard-drive"></i>Enigma Datacenter</a
+        >
+      </div>
+    </div>
+    <div class="topsection">
+      <h2>Enigma Datacenter</h2>
+      <span
+        >The evolution of one of the world's largest cryptocurrency mining
+        facilities</span
+      >
+    </div>
+    <div>
+      <div>
+        <h2>Validating the network, one transaction at a time.</h2>
+        <p>
+          Enigma is one of the largest cryptocurrency mining facilities in the
+          world. First built to exclusively mine Ethereum, the facility is being
+          continuously upgraded for mining state-of-the-art Blockchain
+          technology. Enigma’s computational performance is achieved with
+          specifically designed mining rigs that efficiently mine hashing
+          algorithms for various cryptocurrencies such as Zcash, Dash, Monero
+          and others.
+        </p>
+      </div>
+    </div>
+    <div>
+      <div></div>
+      <div>
+        <h2>Energy(Iceland + Geothermal energy)</h2>
+        <p>
+          The results of cryptocurrency mining highly depend on infrastructure
+          efficiency and electricity rates, which make renewable energy sources
+          - such as geothermal and hydropower - the go-to solution for a
+          cost-effective and clean mining operation. Today, over 80% of
+          Iceland’s energy is provided by renewable sources.
+        </p>
+      </div>
+      <div>
+        <h2>Mining hardware</h2>
+        <p>
+          Enigma is powered by a setup of optimized GPUs (graphic processing
+          units). These GPUs are placed in ‘Rigs’ which are specifically
+          designed to house as much hashing power as efficiently as possible.
+          The miners’ software is configured for maximum performance by mining
+          Kernels (hardware operating systems) like ‘Timexsignals OS’ that we’ve
+          developed in-house. We then manage it with our Hive interface.
+        </p>
+      </div>
+      <div>
+        <h2>Mining Software / Hive</h2>
+        <p>
+          Hive is our software interface which enables the efficient setup,
+          configuration and management of all our mining facilities. Keeping
+          track of all devices is key for the success of any mining operation.
+          Besides the total hashrate, power consumption and facility
+          temperatures there are a myriad of details and settings like firmware,
+          mining pools and safety protections that need to be checked and
+          managed.
+        </p>
+      </div>
+      <div>
+        <h2>Minable Cryptocurrencies(Algorithms)</h2>
+        <p>
+          The results of cryptocurrency mining highly depend on infrastructure
+          efficiency and electricity rates, which make renewable energy sources
+          - such as geothermal and hydropower - the go-to solution for a
+          cost-effective and clean mining operation. Today, over 80% of
+          Iceland’s energy is provided by renewable sources.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footerleft">
+        <img src="images/logo-etrade.png" alt="" />
+        <h2>E*tradesignals</h2>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <span>support@E*tradesignals.online</span>
+        </div>
+      </div>
+      <div class="footerright">
+        <h2>Quick Links</h2>
+        <div>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
