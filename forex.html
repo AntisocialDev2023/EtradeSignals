@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trade Forex- E*TradeSignals</title>
+    <script
+      src="https://kit.fontawesome.com/4026608ea1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/general.css" />
+    <script src="control.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <button onclick="toggleNav()" class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </li>
+          <li><a href="index.html">E*Tradesignals</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li>Login</li>
+          <li>Sign Up</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="sidebar" id="sidenav">
+      <div class="logos">
+        <img src="images/logo-etrade.png" alt="" />
+        <button><i class="fa-solid fa-x" onclick="toggleNav()"></i></button>
+      </div>
+      <button onclick="toggleTheme()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Theme
+      </button>
+      <div class="theme" id="theme">
+        <button onclick="toggleDark()">Light</button>
+        <button onclick="toggleDark()">Dark</button>
+      </div>
+      <button onclick="togglePages()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Pages
+      </button>
+      <div class="pages" id="pages">
+        <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+          <a href="about.html">
+            <img src="images/profile-2user-svgrepo-com.svg" alt="" />
+            About Us</a
+          >
+          <a href="contact.html"
+            ><i class="fa-solid fa-envelope"></i>Contact Us</a
+          >
+          <a href="privacypolicy.html"
+            ><i class="fa-solid fa-lock"></i>Privacy Policy</a
+          >
+          <a href="#"><i class="fa-regular fa-folder"></i>Terms & Conditions</a>
+
+          <a href="./auth/login.php"
+            ><i class="fa-regular fa-user"></i>Sign in</a
+          >
+          <a href="./auth/register.php">
+            <img src="images/profile-add-svgrepo-com.svg" alt="" />
+            Open Account</a
+          >
+      </div>
+      <button onclick="toggleTrading()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Trading
+      </button>
+      <div class="trading" id="trading">
+        <a href="copy.html"><i class="fa-regular fa-copy"></i>Copy Trading</a>
+          <a href="faq.html"
+            ><i class="fa-solid fa-comments"></i>Trading Help</a
+          >
+          <a href="forex.html"
+            ><i class="fa-regular fa-calendar"></i>Trade Forex</a
+          >
+          <a href="crypto.html"
+            ><i class="fa-regular fa-copyright"></i>Trade Crypto</a
+          >
+          <a href="stocks.html"
+            ><i class="fa-solid fa-chart-simple"></i>Trade Stocks</a
+          >
+          <a href="options.html"
+            ><i class="fa-solid fa-circle-notch"></i>Trade Options</a
+          >
+      </div>
+      <button onclick="toggleMining()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Mining
+      </button>
+      <div class="mining" id="mining">
+        <a href="mininghelp.html"
+            ><i class="fa-solid fa-comments"></i>Mining Help</a
+          >
+          <a href="miningabout.html"
+            ><i class="fa-regular fa-calendar"></i>About Mining</a
+          >
+          <a href="bitcoin.html"
+            ><i class="fa-regular fa-copyright"></i>Bitcoin Mining</a
+          >
+          <a href="dogecoin.html"
+            ><i class="fa-regular fa-copyright"></i>Dogecoin Mining</a
+          >
+          <a href="enigma.html"
+            ><i class="fa-solid fa-hard-drive"></i>Enigma Datacenter</a
+          >
+      </div>
+    </div>
+    <div class="topsection">
+      <h2>Trade Forex</h2>
+      <span>
+        Trade Forex on the E*TradeSignals platform and enjoy reliable pricing
+        and exceptional execution
+      </span>
+    </div>
+    <div>
+      <h3>What is Forex?</h3>
+      <p>
+        Forex is short for foreign exchange. The forex market is a place where
+        currencies are traded. It is the largest and most liquid financial
+        market in the world with an average daily turnover of 6.6 trillion U.S.
+        dollars as of 2019. The basis of the forex market is the fluctuations of
+        exchange rates. Forex traders speculate on the price fluctuations of
+        currency pairs, making money on the difference between buying and
+        selling prices.
+      </p>
+      <h3>What is Margin?</h3>
+      <p>
+        Margin is the amount of a trader’s funds required to open a new
+        position. Margin is estimated based on the size of your trade, which is
+        measured in lots. A standard lot is 100,000 units. We also provide mini
+        lots (10,000 units), micro lots (1,000 units) and nano lots (100 units).
+        The greater the lot, the bigger the margin amount. Margin allows you to
+        trade with leverage, which, in turn, allows you to place trades larger
+        than the amount of your trading capital. Leverage influences the margin
+        amount too.
+      </p>
+      <h3>What is Leverage?</h3>
+      <p>
+        Leverage is the ability to trade positions larger than the amount of
+        capital you possess. This mechanism allows traders to use extra funds
+        from a broker in order to increase the size of their trades. For
+        example, 1:100 leverage means that a trader who has deposited $1,000
+        into his or her account can trade with $100,000. Although leverage lets
+        traders increase their trade size and, consequently, potential gains, it
+        magnifies their potential losses putting their capital at risk.
+      </p>
+      <h3>When is the Forex Market open?</h3>
+      <p>
+        Due to different time zones, the international forex market is open 24
+        hours a day — from 5 p.m. Eastern Standard Time (EST) on Sunday to 4
+        p.m. EST on Friday, except holidays. Markets first open in Australasia,
+        then in Europe and afterwards in North America. So, when the market
+        closes in Australia, traders can have access to markets in other
+        regions. The 24-hour availability of the forex market is what makes it
+        so attractive to millions of traders.
+      </p>
+    </div>
+    <div class="footer">
+      <div class="footerleft">
+        <img src="images/logo-etrade.png" alt="" />
+        <h2>E*tradesignals</h2>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <span>support@E*tradesignals.online</span>
+        </div>
+      </div>
+      <div class="footerright">
+        <h2>Quick Links</h2>
+        <div>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E*tradeSignals</title>
+  <script src="https://kit.fontawesome.com/4026608ea1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Nav Bar -->
+
+  <!-- Hero Section -->
+  <div class="slideshowholder">
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <button onclick="toggleNav()" class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </li>
+          <li><a href="index.html">E*Tradesignals</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="terms.html">About Us</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li>Login</li>
+          <li><a href="" class="openaccount">Open Account</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="sidebar" id="sidenav">
+      <div class="logos">
+        <img src="images/logo-etrade.png" alt="" />
+        <button><i class="fa-solid fa-x" onclick="toggleNav()"></i></button>
+      </div>
+      <button onclick="toggleTheme()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Theme
+      </button>
+      <div class="theme" id="theme">
+        <button onclick="toggleDark()">Light</button>
+        <button onclick="toggleDark()">Dark</button>
+      </div>
+      <button onclick="togglePages()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Pages
+      </button>
+      <div class="pages" id="pages">
+        <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+          <a href="about.html">
+            <img src="images/profile-2user-svgrepo-com.svg" alt="" />
+            About Us</a
+          >
+          <a href="contact.html"
+            ><i class="fa-solid fa-envelope"></i>Contact Us</a
+          >
+          <a href="privacypolicy.html"
+            ><i class="fa-solid fa-lock"></i>Privacy Policy</a
+          >
+          <a href="#"><i class="fa-regular fa-folder"></i>Terms & Conditions</a>
+
+          <a href="./auth/login.php"
+            ><i class="fa-regular fa-user"></i>Sign in</a
+          >
+          <a href="./auth/register.php">
+            <img src="images/profile-add-svgrepo-com.svg" alt="" />
+            Open Account</a
+          >
+      </div>
+      <button onclick="toggleTrading()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Trading
+      </button>
+      <div class="trading" id="trading">
+        <a href="copy.html"><i class="fa-regular fa-copy"></i>Copy Trading</a>
+          <a href="faq.html"
+            ><i class="fa-solid fa-comments"></i>Trading Help</a
+          >
+          <a href="forex.html"
+            ><i class="fa-regular fa-calendar"></i>Trade Forex</a
+          >
+          <a href="crypto.html"
+            ><i class="fa-regular fa-copyright"></i>Trade Crypto</a
+          >
+          <a href="stocks.html"
+            ><i class="fa-solid fa-chart-simple"></i>Trade Stocks</a
+          >
+          <a href="options.html"
+            ><i class="fa-solid fa-circle-notch"></i>Trade Options</a
+          >
+      </div>
+      <button onclick="toggleMining()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Mining
+      </button>
+      <div class="mining" id="mining">
+        <a href="mininghelp.html"
+            ><i class="fa-solid fa-comments"></i>Mining Help</a
+          >
+          <a href="miningabout.html"
+            ><i class="fa-regular fa-calendar"></i>About Mining</a
+          >
+          <a href="bitcoin.html"
+            ><i class="fa-regular fa-copyright"></i>Bitcoin Mining</a
+          >
+          <a href="dogecoin.html"
+            ><i class="fa-regular fa-copyright"></i>Dogecoin Mining</a
+          >
+          <a href="enigma.html"
+            ><i class="fa-solid fa-hard-drive"></i>Enigma Datacenter</a
+          >
+      </div>
+    </div>
+    <div class="slideshowfront"></div>
+    <div class="slideshowtext">
+      <div>
+        <h3>Welcome to E*TradeSignals</h3>
+        <p>
+          Start making profit today by trading crypto currencies, Trading
+          stocks or binary options.
+        </p>
+        <button>GET STARTED</button>
+      </div>
+      <div>
+        <h3>Trade stocks</h3>
+        <p>Trade stocks or make longterm investments on the same platform</p>
+        <button>LEARN MORE</button>
+      </div>
+      <div>
+        <h3>Trade Forex</h3>
+        <p>
+          Trade forex on the E*Tradesignals platform and enjoy reliable
+          pricing and exceptional execution
+        </p>
+        <button>LEARN MORE</button>
+      </div>
+      <div>
+        <h3>Copy Expert Traders</h3>
+        <p>
+          Select from a list of expert traders, and automatically copy their
+          trades without to having to watch the market yourself
+        </p>
+        <button>LEARN MORE</button>
+      </div>
+    </div>
+    <div class="slideshow">
+      <img src="images/BgForex.jpg" alt="" />
+      <img src="images/BgStocks2.jpg" alt="" />
+      <img src="images/Crypto4.jpg" alt="" />
+      <img src="images/black.jpg" alt="" />
+    </div>
+  </div>
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright">
+      <!-- <a
+          href="https://www.tradingview.com/"
+          rel="noopener nofollow"
+          target="_blank"
+          ><span class="blue-text">Track all markets on TradingView</span></a
+        >
+      </div> -->
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async>
+          {
+            "symbols" = [
+              {
+                "proName": "FOREXCOM:SPXUSD",
+                "title": "S&P 500 Index"
+              },
+              {
+                "proName": "FOREXCOM:NSXUSD",
+                "title": "US 100 Cash CFD"
+              },
+              {
+                "proName": "FX_IDC:EURUSD",
+                "title": "EUR to USD"
+              },
+              {
+                "proName": "BITSTAMP:BTCUSD",
+                "title": "Bitcoin"
+              },
+              {
+                "proName": "BITSTAMP:ETHUSD",
+                "title": "Ethereum"
+              }
+            ],
+              "showSymbolLogo" = true,
+              "isTransparent" = false,
+              "displayMode" = "adaptive",
+              "colorTheme" = "dark",
+              "locale" = "en"
+          }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <!-- Services Section -->
+    <div class="services">
+      <div class="servicescontent">
+        <img src="images/Service2.png" alt="Service2" />
+        <div>
+          <h2>FAST WITHDRAWALS</h2>
+          <p>
+            Withdrawal requests process instantly. You can make as many requests
+            as you want everyday and without a minimum or limits.
+          </p>
+        </div>
+      </div>
+      <div class="servicescontent">
+        <img src="images/Service1.png" alt="Service1" />
+        <div>
+          <h2>FRIENDLY INTERFACE</h2>
+          <p>
+            Whether you are a beginner or a professional in the online
+            investment field, we are sure that you will find our platform easy
+            to use.
+          </p>
+        </div>
+      </div>
+      <div class="servicescontent">
+        <img src="images/Service3.png" alt="Service3" />
+        <div>
+          <h2>24\7 SUPPORT</h2>
+          <p>
+            We provide unbeatable support service through ticket system and
+            email to cater your needs and give a professional, fast and
+            effective response
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Platform Benefits -->
+    <div class="benefits">
+      <img src="images/Landing3.png" alt="Landing3" />
+      <div class="benefitstext">
+        <h2>Enjoy the ultimate platform</h2>
+        <p>
+          Smooth Experience on Any Device. A multichart layout, technical
+          analysis, historical quotes and beyond. Everything you’re looking for
+          in a platform — on the device of your choice.
+        </p>
+        <p>
+          Whether you prefer trading at your desk or on the go — E*Tradesignals
+          has got you covered. The custom-built platform has been adapted for
+          any device you may choose and switching is 100% seamless.
+        </p>
+        <button class="browserbutton">Open in Browser</button>
+      </div>
+    </div>
+    <!-- Charity Section -->
+    <div class="charity">
+      <div class="charitytext">
+        <h2>Our Charity Missions</h2>
+        <p>
+          We believe everyone has the right to a decent life. So, we channel a
+          part of our earnings to bring positive change to local communities.
+        </p>
+        <p>
+          E*Tradesignals partners with trusted humanitarian organizations and
+          on-site volunteers to deliver emergency aid to disaster victims and
+          run awareness and education programs. We also help vulnerable
+          communities to overcome poverty and ensure healthy growth.
+        </p>
+      </div>
+      <img src="images/Heart.png" alt="" class="heart" />
+    </div>
+    <!-- Prices Section-->
+    <div class="prices">
+      <div>
+        <img src="images/bitcoin.svg" alt="" />
+        <span>Bitcoin</span>
+        <span>2996</span>
+      </div>
+      <div>
+        <img src="images/ethereum.svg" alt="" />
+        <span>Ethereum</span>
+        <span>280</span>
+      </div>
+      <div>
+        <img src="images/binance.svg" alt="" />
+        <span>Binance Coin</span>
+        <span>350</span>
+      </div>
+      <div>
+        <img src="images/bitcoincash.svg" alt="" />
+        <span>Bitcoin Cash</span>
+        <span>2233</span>
+      </div>
+    </div>
+    <!-- Technical Analysis -->
+    <div class="technical">
+      <div class="technicaltext">
+        <h2>Technical Analysis</h2>
+        <p>
+          Get the most out of fundamental and technical analysis with our more
+          than 100 most widely-used technical indicators and widgets. Always
+          stay up-to-date on what is happening in the financial markets.
+        </p>
+      </div>
+      <img src="images/Experience.png" alt="" />
+    </div>
+    <!-- FAQ section -->
+    <div class="faq">
+      <h1>FAQS</h1>
+      <div class="faqholder">
+        <div class="faq1">
+          <button onclick="toggleFirstFaq()">
+            <i class="fa-solid fa-caret-down"></i>
+            What is a trading platform?
+          </button>
+          <div class="firstfaq" id="firstfaq">
+            <p>It is an online platform where traders track the quotes of different kinds of assets and make trades
+              using the services provided by a broker.</p>
+          </div>
+          <button onclick="toggleSecondFaq()">
+            <i class="fa-solid fa-caret-down"></i>
+            The Platform doesn't load
+          </button>
+          <div class="secondfaq" id="secondfaq">
+            Try opening it in some other browser. We recommend using the latest Google Chrome. The system will not let
+            you log in to the trading platform if your location is blacklisted. Perhaps, there is an unexpected
+            technical problem. Our support consultants will help you solve it.
+          </div>
+          <button onclick="toggleThirdFaq()">
+            <i class="fa-solid fa-caret-down"></i>
+            When will deposits be credited
+          </button>
+          <div class="thirdfaq" id="thirdfaq">
+            <p>The funds are usually credited to trading accounts fast, but sometimes it can take from 2 to 5 business
+              days (depending on your payment provider.) If the money has not been credited to your account right after
+              you make a deposit, please wait for 1 hour. If after 1 hour there is still no money, please wait and check
+              again.</p>
+          </div>
+          <button onclick="toggleFourthFaq()">
+            <i class="fa-solid fa-caret-down"></i>
+            Do I need to install any trading software?
+          </button>
+          <div class="fourthfaq" id="fourthfaq">
+            <p>You can trade on our online platform in the web version right after you create an account. There is no
+              need to install new software.</p>
+          </div>
+          <button onclick="toggleFifthFaq()">
+            <i class="fa-solid fa-caret-down"></i>
+            What should I do if a system error occurs?
+          </button>
+          <div class="fifthfaq" id="fifthfaq">
+            <p>When system errors occurs, we recommend clearing your cache and cookies. You should also make sure you
+              are using the latest version of the web browser. If you take these actions but the error still occurs,
+              contact our support team.</p>
+          </div>
+        </div>
+        <div class="faq2">
+          <button onclick="toggleSixthFaq()">
+            <i class="fa-solid fa-caret-down"></i>
+            What are bonuses
+          </button>
+          <div class="sixthfaq" id="sixthfaq">
+            <p>Bonus is the money the company provides to a client for trading. Traders don't lose their own funds when they lose a bonus. On the other hand, in case of success, they pocket the profit gained from using bonus funds.</p>
+          </div>
+          <button onclick="toggleSeventhFaq()">
+            <i class="fa-solid fa-caret-down"></i>
+            Trading and Quote sessions
+          </button>
+          <div class="seventhfaq" id="seventhfaq">
+            <p>A quote session is a period when the platform receives and transmits quotes. However, one can make trades within a slightly shorter trading session, which is part of a quote session. As a rule, a quote session starts 5-10 minutes earlier and ends 5-10 minutes later than the trading session. This is meant to protect traders from the risk of high volatility at the beginning and the end of the quote session. For example, a quote session for Apple shares starts at 13:30 GMT (US Summer Time) and ends at 20:00. A trading session for Apple shares starts with a five-minute delay, i.e. at 13:35. And it ends at 19:55, which is 5 minutes before the quote session ends.</p>
+          </div>
+          <button onclick="toggleEighthFaq()">
+            <i class="fa-solid fa-caret-down"></i>
+            Why Doesn't a Trade Open Instantly
+          </button>
+          <div class="eighthfaq" id="eighthfaq">
+            <p>It takes a few seconds to get data from the servers of our liquidity providers. As a rule, the process of opening a new trade takes up to 4 seconds.
+            </p>
+          </div>
+          <button onclick="toggleNinthFaq()">
+            <i class="fa-solid fa-caret-down"></i>
+            How can I view the history of my trades?
+          </button>
+          <div class="ninthfaq" id="ninthfaq">
+            <p>
+              All information about your recent trades is available in the “Trades” section. You can access the history of all your trades through the section with the same name as your user account.
+            </p>
+          </div>
+          <button onclick="toggleTenthFaq()">
+            <i class="fa-solid fa-caret-down"></i>
+            What is the most active time of the day for trading?
+          </button>
+          <div class="tenthfaq" id="tenthfaq">
+            <p>Trading activity depends on the working hours of major exchanges and increases at the time of important news releases. The most active trading sessions are European and North American ones. The European session begins at around 6:00 UTC and closes at 15:00 UTC. The North American trading session spans from 13:00 UTC until 22:00 UTC. Please note that some currency pairs and assets are available for trading for a limited period of time. The trading hours for each asset are specified in the “Trading Conditions” tab of the “Asset” menu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Review Section -->
+    <div class="review">
+      <div>
+        <img src="images/T1.jpeg" alt="" />
+        <h2>Angelina Huel</h2>
+        <p>
+          I dont know much about forex or crypto trading, but I simply make
+          profits by copying expert traders on the platform
+        </p>
+      </div>
+      <div>
+        <img src="images/T2.jpeg" alt="" />
+        <h2>Adrian Stroman</h2>
+        <p>
+          Pretty solid so far!. Opening an account was relatively quick which
+          was nice. And the spreads are amazing. Highly recommend this broker.
+        </p>
+      </div>
+      <div>
+        <img src="images/T3.jpeg" alt="" />
+        <h2>James Cruickshank</h2>
+        <p>
+          Impressive customer service! I can now trade with peace of mind.
+          Thanks for your high quality platform for traders. Love it.
+        </p>
+      </div>
+    </div>
+    <!-- Countries Spanned -->
+    <div class="countries">
+      <div class="countryhead">
+        <h2>134 countries</h2>
+        <span>Traders from all over the world trust E*tradesignals. The platform
+          interface is localized into 12 languages.
+        </span>
+      </div>
+      <div class="countrybody">
+        <div>
+          <span>English</span>
+          <span>Türkçe</span>
+          <span>Indonesia</span>
+          <span>Espanol</span>
+        </div>
+        <div>
+          <span>Português</span>
+          <span>Français</span>
+          <span>Português</span>
+          <span>Japanese</span>
+        </div>
+        <div>
+          <span>Chinese</span>
+          <span>German</span>
+          <span>Italiano</span>
+          <span>Svenska</span>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class="footerleft">
+        <img src="images/logo-etrade.png" alt="" />
+        <h2>E*tradesignals</h2>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <span>support@E*tradesignals.online</span>
+        </div>
+      </div>
+      <div class="footerright">
+        <h2>Quick Links</h2>
+        <div>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="privacypolicy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      let current = 0;
+      let images = document.querySelectorAll(".slideshow img");
+
+      function nextImage() {
+        images[current].style.display = "none";
+        current = (current + 1) % images.length;
+        images[current].style.display = "block";
+      }
+
+      setInterval(nextImage, 1000);
+
+      let text = document.querySelectorAll(".slideshowtext div");
+      let currenttext = 0;
+
+      function nextText() {
+        text[currenttext].style.display = "none";
+        currenttext = (currenttext + 1) % text.length;
+        text[currenttext].style.display = "block";
+      }
+
+      setInterval(nextText, 1000);
+
+      function toggleNav() {
+        var nav = document.getElementById("sidenav");
+        nav.classList.toggle("active");
+      }
+
+      function toggleTheme() {
+        var theme = document.getElementById("theme");
+        theme.classList.toggle("active");
+      }
+
+      function togglePages() {
+        var pages = document.getElementById("pages");
+        pages.classList.toggle("active");
+      }
+
+      function toggleTrading() {
+        var trading = document.getElementById("trading");
+        trading.classList.toggle("active");
+      }
+
+      function toggleMining() {
+        var mining = document.getElementById("mining");
+        mining.classList.toggle("active");
+      }
+
+      function toggleFirstFaq() {
+        var firstfaq = document.getElementById("firstfaq");
+        firstfaq.classList.toggle("active");
+      }
+
+      function toggleSecondFaq() {
+        var secondfaq = document.getElementById("secondfaq");
+        secondfaq.classList.toggle("active")
+      }
+
+      function toggleThirdFaq() {
+        var thirdfaq = document.getElementById("thirdfaq");
+        thirdfaq.classList.toggle("active")
+      }
+
+      function toggleFourthFaq() {
+        var fourthfaq = document.getElementById("fourthfaq");
+        fourthfaq.classList.toggle("active")
+      }
+
+      function toggleFifthFaq() {
+        var fifthfaq = document.getElementById("fifthfaq");
+        fifthfaq.classList.toggle("active");
+      }
+
+      function toggleSixthFaq(){
+        var sixthfaq = document.getElementById("sixthfaq");
+        sixthfaq.classList.toggle("active");
+      }
+
+      function toggleSeventhFaq(){
+        var seventhfaq = document.getElementById("seventhfaq");
+        seventhfaq.classList.toggle("active");
+      }
+
+      function toggleEighthFaq(){
+        var eighthfaq = document.getElementById("eighthfaq");
+        eighthfaq.classList.toggle("active");
+      }
+
+      function toggleNinthFaq(){
+        var ninthfaq = document.getElementById("ninthfaq");
+        ninthfaq.classList.toggle("active");
+      }
+
+      function toggleTenthFaq(){
+        var tenthfaq = document.getElementById("tenthfaq");
+        tenthfaq.classList.toggle("active");
+      }
+
+      function toggleDark() {
+        var body = document.body;
+        body.classList.toggle("dark-mode");
+      }
+    </script>
+</body>
+
+</html>

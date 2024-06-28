@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Mining - E*TradeSignals</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <script
+      src="https://kit.fontawesome.com/4026608ea1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="control.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <button onclick="toggleNav()" class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </li>
+          <li><a href="index.html">E*Tradesignals</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li>Login</li>
+          <li>Sign Up</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="sidebar" id="sidenav">
+      <div class="logos">
+        <img src="images/logo-etrade.png" alt="" />
+        <button><i class="fa-solid fa-x" onclick="toggleNav()"></i></button>
+      </div>
+      <button onclick="toggleTheme()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Theme
+      </button>
+      <div class="theme" id="theme">
+        <button onclick="toggleDark()">Light</button>
+        <button onclick="toggleDark()">Dark</button>
+      </div>
+      <button onclick="togglePages()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Pages
+      </button>
+      <div class="pages" id="pages">
+        <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="about.html">
+          <img src="images/profile-2user-svgrepo-com.svg" alt="" />
+          About Us</a
+        >
+        <a href="contact.html"
+          ><i class="fa-solid fa-envelope"></i>Contact Us</a
+        >
+        <a href="privacypolicy.html"
+          ><i class="fa-solid fa-lock"></i>Privacy Policy</a
+        >
+        <a href="#"><i class="fa-regular fa-folder"></i>Terms & Conditions</a>
+
+        <a href="./auth/login.php"><i class="fa-regular fa-user"></i>Sign in</a>
+        <a href="./auth/register.php">
+          <img src="images/profile-add-svgrepo-com.svg" alt="" />
+          Open Account</a
+        >
+      </div>
+      <button onclick="toggleTrading()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Trading
+      </button>
+      <div class="trading" id="trading">
+        <a href="copy.html"><i class="fa-regular fa-copy"></i>Copy Trading</a>
+        <a href="faq.html"><i class="fa-solid fa-comments"></i>Trading Help</a>
+        <a href="forex.html"
+          ><i class="fa-regular fa-calendar"></i>Trade Forex</a
+        >
+        <a href="crypto.html"
+          ><i class="fa-regular fa-copyright"></i>Trade Crypto</a
+        >
+        <a href="stocks.html"
+          ><i class="fa-solid fa-chart-simple"></i>Trade Stocks</a
+        >
+        <a href="options.html"
+          ><i class="fa-solid fa-circle-notch"></i>Trade Options</a
+        >
+      </div>
+      <button onclick="toggleMining()" class="dropdown">
+        <i class="fa-solid fa-caret-down"></i>
+        Mining
+      </button>
+      <div class="mining" id="mining">
+        <a href="mininghelp.html"
+          ><i class="fa-solid fa-comments"></i>Mining Help</a
+        >
+        <a href="miningabout.html"
+          ><i class="fa-regular fa-calendar"></i>About Mining</a
+        >
+        <a href="bitcoin.html"
+          ><i class="fa-regular fa-copyright"></i>Bitcoin Mining</a
+        >
+        <a href="dogecoin.html"
+          ><i class="fa-regular fa-copyright"></i>Dogecoin Mining</a
+        >
+        <a href="enigma.html"
+          ><i class="fa-solid fa-hard-drive"></i>Enigma Datacenter</a
+        >
+      </div>
+    </div>
+    <div class="topsection">
+      <h2>Crypto Mining</h2>
+      <span>Get to know a new idea of money</span>
+    </div>
+    <div></div>
+    <div>
+      <div>
+        <h2>Why is mining so important?</h2>
+        <p>
+          Cryptocurrency networks need computational power to run securely. The
+          world’s most powerful blockchains are supported by millions of
+          computers around the world.
+        </p>
+        <p>
+          Unlike paper money, Bitcoin and other cryptocurrencies are produced
+          mathematically and held digitally. The people who voluntarily offer
+          their computing power to secure these cryptocurrency networks are
+          called miners. Cryptocurrencies don’t have a central government or
+          other so-called ‘middlemen’ that decide about the future of the
+          system. – They are in fact digital, borderless democracies in which
+          miners vote with their computing power to reach order and consensus.
+        </p>
+      </div>
+      <div>
+        <h2>How is bitcoin kept secure?</h2>
+        <p>
+          The only way to not create money out of thin air or corrupt it, is to
+          burn real energy. This is called Proof-Of-Work.
+        </p>
+        <p>
+          Today, bitcoin is the most secure computer network on the planet and
+          it’s practically impossible to break it! The reason for that is hash
+          power, the umbrella term used for the computing power that miners
+          provide to the bitcoin network and similar cryptocurrency networks.
+          Due to the rapid growth of the ecosystem, mining operations today are
+          mostly running with specialized high-performance computers that
+          function most efficiently set up in large data centers.
+        </p>
+      </div>
+      <div>
+        <h2>What's the incentive for miners?</h2>
+        <p>
+          It all comes down to trust: Miners keep the blockchains trustworthy
+          and are rewarded for their efforts.
+        </p>
+        <p>
+          As miners, we are processing and verifying the transactions of the
+          cryptocurrency ecosystems and keeping their public transaction history
+          (blockchains) maintained and secure. For this, the mining community is
+          rewarded with the networks’ transaction fees and newly created coins.
+          It’s a win-win situation! When you start mining with us, you are
+          getting your share of this reward.
+        </p>
+      </div>
+      <div>
+        <h2>The big vision of cryptocurrency</h2>
+        <p>The future will be decentralized</p>
+        <p>
+          To keep the integrity (and values!) of all cryptocurrency ecosystems
+          intact, miners keep the networks safe and its authority decentralized
+          by keeping each other constantly in check. This allows both a healthy
+          growth and a fair distribution of currency units to all
+          crypto-citizens!
+        </p>
+      </div>
+    </div>
+    <div>
+      <h2>Why E*TradeSignals</h2>
+      <span>We are making mining accessible to everyone</span>
+      <p>
+        We are uniting all key aspects of running an efficient cryptocurrency
+        mining operation. From building highly efficient data centers to
+        providing a streamlined mining system for users.
+      </p>
+      <div>
+        <div>
+          <h2>We make mining competitive</h2>
+          <p>
+            To mine competitively today, you need to invest significant
+            resources, time and effort into your setup. Our team has built the
+            most efficient mining systems to do the job for you. This way you
+            can fully focus on keeping track of the markets and remain
+            competitive with your mining rewards.
+          </p>
+        </div>
+        <div>
+          <h2>Contributing to the ecosystem.</h2>
+          <p>
+            Besides being the portal for interesting mining data, we are also
+            actively contributing to the cryptocurrency ecosystem, from
+            launching awareness campaigns to releasing open-source mining
+            software.
+          </p>
+        </div>
+        <div>
+          <h2>Multi-algorithm support</h2>
+          <p>
+            We are building mining data centers around the world that are able
+            to support 6 mining algorithms for 10+ different cryptocurrencies.
+            If that’s not enough, we’d be happy to also support the ones you
+            want to mine!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footerleft">
+        <img src="images/logo-etrade.png" alt="" />
+        <h2>E*tradesignals</h2>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <span>support@E*tradesignals.online</span>
+        </div>
+      </div>
+      <div class="footerright">
+        <h2>Quick Links</h2>
+        <div>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
